@@ -1,0 +1,17 @@
+html { 
+  background: url(../images/IMG_5534b.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	text-align: center;
+	text-shadow: 0 2px 2px rgba(216, 188, 172, 0.4);
+	color: #1C120D;
+}
+
+header {
+	margin-top: 50vh;
+}
