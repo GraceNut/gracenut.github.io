@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'EntypoSocialRegular';
+    src: url('../fonts/entypo/entypo-social.eot');
+    src: url('../fonts/entypo/entypo-social.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/entypo/entypo-social.woff') format('woff'),
+         url('../fonts/entypo/entypo-social.ttf') format('truetype'),
+         url('../fonts/entypo/entypo-social.svg#EntypoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html { 
   background: url(../images/IMG_5534b.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -7,11 +18,44 @@ html {
 }
 
 body {
+	background-color: rgba(255,255,255,0.2);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	text-align: center;
-	text-shadow: 0 2px 2px rgba(216, 188, 172, 0.4);
-	color: #1C120D;
+	text-shadow: 0 2px 4px #CEBFB6;
+	color: #312721;
 }
 
 header {
 	margin-top: 50vh;
+}
+
+h1 {
+	font-weight: 700;
+}
+
+a.github:before {
+	content:'\F300';
+}
+
+a.twitter:before {
+	content:'\F309';
+}
+
+.entypo-social {
+	font-family: 'EntypoSocialRegular';
+	font-size: 4rem;
+	font-weight: normal;
+	line-height: 0;
+	text-shadow: 0 2px 4px #CEBFB6;
+	text-decoration: none;
+	color: #312721;
+}
+
+.entypo-social:hover {
+	color: #E7DFDA;
+	text-shadow: 0 1px 4px #9D7E6C;
 }
