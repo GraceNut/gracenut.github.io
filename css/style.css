@@ -9,23 +9,12 @@
 		font-style: normal;
 }
 
-html { 
-	background: url(../images/background.png) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
 body {
-	background-color: rgba(255,255,255,0.2);
-	min-height: 100vh;
-	min-width: 100vw;
-	position: absolute;
-	top: 0;
 	text-align: center;
 	text-shadow: 0 2px 4px #CEBFB6;
 	color: #312721;
+	position: absolute;
+	left: 0;
 }
 
 header {
@@ -44,6 +33,34 @@ a.twitter:before {
 	content:'\F309';
 }
 
+div.row {
+	position: absolute;
+	left: 0;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+div.row:first-child {
+	min-height: 100vh;
+	min-width: 100vw !important;
+	position: absolute;
+	top: 0;
+	background: 
+		linear-gradient(
+			transparent 15%, 
+			#fff
+		),
+		url(../images/background.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 .entypo-social {
 	font-family: 'EntypoSocialRegular';
 	font-size: 4rem;
@@ -55,6 +72,5 @@ a.twitter:before {
 }
 
 .entypo-social:hover {
-	color: #E7DFDA;
-	text-shadow: 0 1px 4px #9D7E6C;
+	color: #B63F32;
 }
