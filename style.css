@@ -38,71 +38,74 @@ h1 {
 	padding: 2em 0;
 }
 
+div {
+	font-size: 0.72em;
+}
+
 a {
-	text-decoration: none;
-	font-weight: 600;
-	font-size: 1.4em;
-	color: hsla(0, 100%, 100%, 0.8);
-}
-
-a:hover {
-	color: #fff;
-}
-
-li {
 	box-sizing: border-box;
 	display: block;
 	position: absolute;
 	line-height: 5em;
 	height: 10em;
 	width: 15em;
+	font-weight: 600;
+	font-size: 1.4em;
+	text-decoration: none;
+	color: hsla(0, 100%, 100%, 0.8);
 	background-color: hsla(3, 70%, 60%, 0.8);
 	-webkit-transition: transform 0.2s ease-in-out;
 }
 
-li:first-child, li:nth-child(2) {
+
+a:hover {
+	color: #fff;
+}
+
+
+a:first-child, a:nth-child(2) {
 	top: 0;
 }
 
-li:nth-child(3), li:last-child {
+a:nth-child(3), a:last-child {
 	line-height: 15em;
 	bottom: 0;
 }
 
-li:nth-child(2), li:last-child {
+a:nth-child(2), a:last-child {
 	text-align: right;
 	padding-right: 2em;
 	right: 5%;
 }
 
-li:first-child, li:nth-child(3) {
+a:first-child, a:nth-child(3) {
 	text-align: left;
 	padding-left: 2em;
 	left: 5%;
 }
 
 @media (min-width: 700px) {
-	li:first-child {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 15%, 0 95%);
+	a:first-child {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 14%, 0 95%);
 		clip-path: polygon(0 0, 100% 0, 100% 15%, 0 95%);
 	}
 
-	li:nth-child(2) {
+	a:nth-child(2) {
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 15%);
 		clip-path: polygon(0 0, 100% 0, 100% 95%, 0 15%);
 	}
 
-	li:nth-child(3) {
+	a:nth-child(3) {
 		-webkit-clip-path: polygon(0 5%, 100% 85%, 100% 100%, 0 100%);
 		clip-path: polygon(0 5%, 100% 85%, 100% 100%, 0 100%);
 	}
 
-	li:last-child {
+	a:last-child {
 		-webkit-clip-path: polygon(0 85%, 100% 5%, 100% 100%, 0 100%);
 		clip-path: polygon(0 85%, 100% 5%, 100% 100%, 0 100%);
 	}
 
-	li:hover {
+	a:hover {
 		transform: scale(1.05);
 	}
 }
