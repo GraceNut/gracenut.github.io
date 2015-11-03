@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	font-family: 'Josefin Sans', sans-serif;
-	color: #36302B;
+	color: #04202B;
 	text-align: center;
 
 	background-color: #fff;
@@ -24,7 +24,7 @@ main:after {
 	right: -0.6em;
 	bottom: -0.5em;
 	left: -0.6em;
-	background-color: #64C733;
+	background-color: hsl(350, 75%, 50%);
 }
 
 main:after, h1 {
