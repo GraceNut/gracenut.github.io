@@ -4,10 +4,11 @@ body {
 	color: #36302B;
 	text-align: center;
 
-	background-color: #64C733;
+	background-color: #fff;
 }
 
 main {
+	z-index: 1;
 	max-width: 700px;
 	margin: 50vh auto 0;
 	line-height: 2;
@@ -15,22 +16,26 @@ main {
 	transform: translateY(-50%);
 }
 
-main:before {
+main:after {
 	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	z-index: -1;
-	background-color: hsl(0, 0%, 100%);
+	position: absolute;
+	top: -0.5em;
+	right: -0.6em;
+	bottom: -0.5em;
+	left: -0.6em;
+	background-color: #64C733;
+}
+
+main:after, h1 {
 	-webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
 
 h1 {
 	font-size: 4em;
-	padding: 2em 0;
+	padding: 2.4em 0;
+	background-color: #fff;
 }
 
 a {
