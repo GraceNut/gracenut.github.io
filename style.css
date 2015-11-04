@@ -39,6 +39,7 @@ h1 {
 }
 
 a {
+	font-size: 1.2em;
 	color: hsl(190, 90%, 40%);
 }
 
@@ -54,6 +55,7 @@ ul {
 }
 
 li {
+	line-height: 1.5;
 	list-style: none;
 	text-align: left;
 }
