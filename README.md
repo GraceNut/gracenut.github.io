@@ -1,4 +1,4 @@
 gracenut.github.io
 ==================
 
-a site about me
+a little site about me + links to me elsewhere
