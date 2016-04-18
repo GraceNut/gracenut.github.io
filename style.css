@@ -3,7 +3,6 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 	color: #04202B;
 	text-align: center;
-
 	background-color: #f9f9f9;
 }
 
@@ -24,7 +23,7 @@ main:after {
 	right: -0.6em;
 	bottom: -0.5em;
 	left: -0.6em;
-	background-color: hsl(350, 75%, 80%);
+	background-color: hsl(350, 85%, 80%);
 }
 
 main:after, h1 {
@@ -42,13 +41,13 @@ a {
 	font-size: 1.2em;
 	padding: .4em .2em .1em;
 	color: hsl(190, 90%, 20%);
-	background-color: hsl(350, 75%, 95%);
+	background-color: hsl(350, 85%, 95%);
 	text-decoration: none;
 }
 
 a:hover {
 	color: hsl(190, 90%, 10%);
-	background-color: hsl(350, 75%, 85%);
+	background-color: hsl(350, 85%, 85%);
 }
 
 ul {
