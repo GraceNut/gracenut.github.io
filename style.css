@@ -24,7 +24,7 @@ main:after {
 	right: -0.6em;
 	bottom: -0.5em;
 	left: -0.6em;
-	background-color: hsl(350, 75%, 50%);
+	background-color: hsl(350, 75%, 80%);
 }
 
 main:after, h1 {
@@ -40,11 +40,15 @@ h1 {
 
 a {
 	font-size: 1.2em;
-	color: hsl(190, 90%, 40%);
+	padding: .4em .2em .1em;
+	color: hsl(190, 90%, 20%);
+	background-color: hsl(350, 75%, 95%);
+	text-decoration: none;
 }
 
 a:hover {
-	color: hsl(190, 90%, 20%);
+	color: hsl(190, 90%, 10%);
+	background-color: hsl(350, 75%, 85%);
 }
 
 ul {
@@ -55,7 +59,7 @@ ul {
 }
 
 li {
-	line-height: 1.7;
+	line-height: 1.7 ;
 	list-style: none;
 	text-align: left;
 }
