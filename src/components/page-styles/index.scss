@@ -1,0 +1,29 @@
+@import '../scss/_variables';
+
+.posts {
+	margin-top: 2em;
+	padding-right: 2em;
+	h2 {
+		font-size: 1.2em;
+		color: darken($light-gray, 30%);
+	}
+	h3 {
+		font-weight: 300;
+		font-size: 1.6em;
+		margin: 0;
+	}
+	li {
+		list-style: none;
+	}
+	p {
+		margin: 0;
+	}
+	.info {
+		font-weight: 300;
+		font-size: .95em;
+		color: $red;
+	}
+	span:nth-child(2) {
+		padding-left: 2em;
+	}
+}

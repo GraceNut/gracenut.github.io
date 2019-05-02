@@ -1,17 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `I’m Haley, fyi`,
+    title: `I’m Haley`,
     description: `The web home of a person who is, in fact, Haley`,
     author: `Haley Gerstenberg`,
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     `gatsby-transformer-sharp`,

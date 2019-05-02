@@ -11,7 +11,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
 
 import Header from "./header"
-import "./main.scss"
+import "./scss/_main.scss"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,13 +27,13 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet>
-          <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600" rel="stylesheet"/>
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div>
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, designed + built by Haley Gerstenberg, using
+            © {new Date().getFullYear()}, designed + built by Haley Gerstenberg using
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
