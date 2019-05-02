@@ -1,53 +1,81 @@
 @import '../scss/_variables';
 
-h2 {
-	font-size: 1.2em;
-	color: darken($light-gray, 30%);
-}
-
-.bio p {
-	margin: 0 .8em;
-	padding-left: 1.4em;
-	border-left: 4px solid $pink;
-}
-
-.posts {
-	margin-top: 2em;
-	padding-right: 2em;
-	h3 {
-		font-weight: 400;
-		font-size: 1.6em;
-		margin: 0;
+.home {
+	h2 {
+		font-size: 1.2em;
+		text-align: right;
+		padding-right: 1.2em;
+		border-right: 4px solid $pink;
+		color: darken($light-gray, 30%);
+		min-width: 5em;
 	}
-	a {
-		text-decoration: none;
-	}
-	li {
-		list-style: none;
-		&:not(:first-child) {
-			margin-top: 1em;
+
+	.bio {
+		p {
+			margin: 0;
+			padding-left: 2em;
 		}
 	}
-	p {
-		margin: 0;
-	}
-	.info {
-		font-weight: 300;
-		font-size: .95em;
-		color: $red;
-	}
-	span {
-		white-space: nowrap;
-	}
-	span:nth-child(2) {
-		padding-left: 2em;
-	}
-	.post {
-		h3, p {
-			opacity: 0.8;
+
+	.posts {
+		margin-top: 2em;
+		padding-right: 2em;
+		h3 {
+			font-weight: 400;
+			font-size: 1.6em;
+			margin: 0;
 		}
-		&:hover h3, &:hover p {
-			opacity: 1;
+		a {
+			text-decoration: none;
+		}
+		ul {
+			padding-left: 2em;
+		}
+		li {
+			list-style: none;
+			&:not(:first-child) {
+				margin-top: 1em;
+			}
+		}
+		p {
+			margin: 0;
+		}
+		.info {
+			font-weight: 300;
+			font-size: .95em;
+			color: $red;
+		}
+		span {
+			white-space: nowrap;
+		}
+		span:nth-child(2) {
+			padding-left: 2em;
+		}
+		.post {
+			h3, p {
+				opacity: 0.8;
+			}
+			&:hover h3, &:hover p {
+				opacity: 1;
+			}
+		}
+	}
+	& > div {
+		display: flex;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.home {
+		& > div {
+			flex-wrap: wrap;
+		}
+		h2 {
+			text-align: left;
+			border-right: none;
+		}
+		.posts ul {
+			margin: 0;
 		}
 	}
 }

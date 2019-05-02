@@ -2,14 +2,15 @@ import React from 'react';
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout';
+import '../components/page-styles/posts.scss'
 
 function BlogPost(props) {
   const post = props.data.markdownRemark;
   const { title } = post.frontmatter;
   return (
     <Layout>
-      <div>
-        <h1>{title}</h1>
+      <div class="blog-post">
+        <h2>{title}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>

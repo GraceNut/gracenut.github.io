@@ -3,6 +3,8 @@
 body {
 	margin: 0;
 	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 main {
@@ -13,7 +15,7 @@ main {
 }
 
 header {
-	width: 100vw;
+	min-width: 100vw;
 	margin: 0 0 2em 0;
 	h1 {
 		display: block;
@@ -34,9 +36,7 @@ header {
 
 footer {
 	text-align: center;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
+	min-width: 100vw;
 	padding: 2em 0;
 }
 
@@ -44,8 +44,4 @@ p {
 	max-width: 70ch;
 	margin: auto;
 	box-sizing: border-box;
-	&.bio {
-		padding-left: 2em;
-		border-left: 4px solid $pink;
-	}
 }
