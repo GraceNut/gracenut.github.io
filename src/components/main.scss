@@ -1,0 +1,28 @@
+@import 'scss/variables';
+@import 'scss/layout';
+
+body {
+  background-color: $white;
+  font-family: 'Overpass Mono', monospace;
+  color: $dark-gray;
+}
+
+a {
+  color: inherit;
+  &:hover {
+    cursor: pointer;
+  }
+  &:visited {
+    color: inherit;
+  }
+}
+
+header {
+  background-color: $light-gray;
+  h1 {
+    color: $dark-gray;
+  }
+  a {
+    text-decoration: none;
+  }
+}
